@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "eslint . --ext .ts",
-    "lint-and-fix": "eslint . --ext .ts --fix"
+    "lint-and-fix": "eslint . --ext .ts --fix",
+    "tests:ci:no-workspace": "vscode-electron-starter no-workspace insiders out/tests/no-workspace",
+    "tests:ci:with-workspace": "vscode-electron-starter with-workspace insiders out/tests/with-workspace"
   },
   "private": true,
   "dependencies": {
@@ -29,10 +31,14 @@
     "@angular/cli": "~15.0.4",
     "@angular/compiler-cli": "^15.0.0",
     "@types/jasmine": "~4.3.0",
+    "@types/jest": "^29.2.4",
+    "@types/jest-environment-vscode-extension": "^0.0.2",
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
     "eslint": "^8.30.0",
     "jasmine-core": "~4.5.0",
+    "jest": "^29.3.1",
+    "jest-environment-vscode-extension": "^0.0.5",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
